@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imgs/wall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-weight: bold;
+    overflow: hidden; /* Impede o rolamento da página enquanto o alerta estiver aberto */
+
+
+}
+
+/* CSS alerta inicial  */
+.alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    color: white;
+    text-align: center;
+    z-index: 9999; /* Certifica-se de que o alerta esteja na parte superior */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.alert-content {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.alert p {
+    margin: 10px;
+    color: white;
+}
+
+.alert a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.alert a:hover {
+    text-decoration: underline;
+    color:#ff69b4;
+}
+
+#confirm-button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* fim CSS alerta inicial  */
+
+h1 {
+    text-align: center;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    float: left;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: black;
+    color: #ff69b4;
+    cursor: pointer;
+    text-align: center;
+    width: 30%;
+
+}
+
+button:hover {
+    background-color: #ff69b4;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin-right: inherit;
+    padding-left: 50%;
+    padding-right: 50%;
+    float: right;
+
+
+}
+
+
+.carteirinha {
+    background: url('imgs/wallpaper.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+   /*  background-attachment: fixed; */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+    font-size: 14px;;
+}
+
+.titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black ;
+    background-color: #ff69b4;
+}
+
+.dados {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+.rotulo {
+     font-weight: bold;
+    color: #ff69b4;
+}
+
+.valor {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.foto img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    text-align: right !important;
+    float: right;
+}
+
+#msgsituacao{
+    color:#ff69b4;
+    font-size: 10px;
+}
+
+.rodape-carteirinha{
+    bottom: 0;
+    font-size: 8px;
+    width: 100%;
+    color: white;
+    /* background-color: #ffffff; */
+    text-align: left;
+}
+
+footer {
+
+    font-size: 12px;
+    text-align: right;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

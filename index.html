@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+        <link rel="icon" href="imgs/wall.jpg" type="image/x-icon">
+
+    <title>Carteirinha de Bissexualidade - Gerador de Carteirinha</title>
+</head>
+
+<body style="text-align: center; color:aliceblue">
+   
+    <div id="alert-box" class="alert">
+        <div class="alert-content">
+            <span class="closebtn" onclick="fecharAlerta()">&times;</span>
+            <p>Este gerador é destinado apenas para diversão entre a comunidade.</p>
+            <p>Lembre-se de respeitar a diversidade e as diferentes identidades de gênero e orientações sexuais.</p>
+            <p>Conheça ONGs de apoio à comunidade LGBTQIA+: <a href="https://queer.ig.com.br/2021-12-12/ong-lgbt-brasil-doacoes.html" target="_blank">Clique aqui.</a></p>
+            <button id="confirm-button" onclick="fecharAlerta()">Compreendo</button>
+        </div>
+    </div>
+    <br><br>
+    <div class="container" style="font-weight: bolder;">
+        <h1>CARTEIRINHA DO BISSEXUAL</h1>
+    </div>
+
+
+    <div class="container">
+        <form id="info-form" style="text-align: center;">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="age">Idade:</label>
+            <input type="number" required min="0" id="age" required><br>
+
+            <label for="location">Cidade/País:</label>
+            <input type="text" id="location" required><br>
+
+            <label for="photo">Foto:</label>
+            <input type="file" id="photo">
+            <img id="uploaded-photo" src="" alt="Foto" style="display: none; text-align: center; height: 100px ;"><br>
+          
+
+            <br>
+            <button type="button" id="start-quiz">Entrar no vale</button><br>
+        </form>
+
+        <div id="quiz-container" class="center" style="display: none;">
+            <h2>Questionário</h2>
+            <form id="quiz-form">
+                <label for="q1">Quantas <b style="color: greenyellow;">MOLIERES</b> você ficou nos últimos tempos?</label>
+                <input type="number" id="q1" required min="0"><br>
+
+                <label for="q2">Quantos <b style="color: yellow;">MACHOS</b> você ficou nos últimos tempos?</label>
+                <input type="number" id="q2" required min="0"><br>
+
+                <!-- Adicione mais perguntas conforme necessário -->
+            </form>
+            <button style="text-align: center;" type="button" id="submit-quiz">Gerar carteirinha</button>
+        </div>
+
+        <div id="result-container" style="display: none;">
+            <div class="carteirinha">
+                <div class="titulo">CARTEIRINHA DE BISSEXUAL 🌈</div>
+                <div class="foto">
+                    <img src="" alt="Foto" id="result-photo">
+                </div>
+                <div class="dados">
+                    <div class="campo">
+                        <span class="rotulo">Nome:</span>
+                        <span class="valor" id="nome"></span>
+                    </div>
+                    <div class="campo">
+                        <span class="rotulo">Idade:</span>
+                        <span class="valor" id="idade"></span>
+                    </div>
+                    <div class="campo">
+                        <span class="rotulo">Cidade/País:</span>
+                        <span class="valor" id="cidade-pais"></span>
+                    </div>
+                    <div class="campo">
+                        <span class="rotulo">Situação:</span>
+                        <span class="valor" id="situacao"></span><br>
+                        <span id="msgsituacao"></span>
+                    </div>
+                   
+                   
+                </div>
+                <p class="rodape-carteirinha">Este documento é valido como comprovante para sua ligitimidade.<br> Válido em território mundial.</p>
+            </div>
+            <button id="download-btn">Baixar Carteirinha</button>
+            <br><br>
+            <button type="button" id="refresh-page">Voltar ao portão do vale</button>
+        </div>
+    </div><!-- fim conatiner -->
+
+
+    <footer>
+        Dev: @emyadventures © 2023
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</body>
+
+
+</html>
