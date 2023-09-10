@@ -241,5 +241,9 @@ footer a:hover{
         font-size: 8px;
        
     }
+
+    label{
+        float: left;
+    }
 }
 
