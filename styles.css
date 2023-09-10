@@ -212,3 +212,10 @@ footer {
     right: 0;
     left: 0;
 }
+
+footer a{
+    color:#ff69b4;
+}
+footer a:hover{
+    color: white;
+}
