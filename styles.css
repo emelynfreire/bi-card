@@ -235,5 +235,11 @@ footer a:hover{
         margin-bottom: 5%;
         min-width: 200px;
     }
+
+    .subtitulo{
+        color: yellow;
+        font-size: 8px;
+       
+    }
 }
 
