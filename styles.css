@@ -163,11 +163,6 @@ img {
     color: black ;
     background-color: #ff69b4;
 }
-.subtitulo{
-    color: yellow;
-    font-size: 12px;
-   
-}
 
 .dados {
     text-align: left;
@@ -234,12 +229,6 @@ footer a:hover{
         width: 100%;
         margin-bottom: 5%;
         min-width: 200px;
-    }
-
-    .subtitulo{
-        color: yellow;
-        font-size: 8px;
-       
     }
 
     label{
