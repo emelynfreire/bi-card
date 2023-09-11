@@ -186,6 +186,7 @@ img {
 .foto img {
     max-width: 130px;
     /* border-radius: 50%; */
+    max-height: 170px;
     margin-top: 20px;
     text-align: right !important;
     float: right;
